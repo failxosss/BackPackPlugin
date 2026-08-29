@@ -1,0 +1,32 @@
+name: BackpackSystem
+version: '${project.version}'
+main: cz.tvojepackage.backpack.BackpackSystem
+api-version: '1.20'
+author: TvéJméno
+description: Systém batohů pro hráče s podporou skupin a permissions
+
+commands:
+  backpack:
+    description: Hlavní příkaz pro batohy
+    usage: /<command> <číslo|list|reload|give>
+    aliases: [bp]
+
+permissions:
+  backpack.use:
+    description: Umožňuje používat základní příkaz batohu
+    default: true
+  backpack.default:
+    description: Přístup k 1 batohu
+    default: true
+  backpack.vip:
+    description: VIP skupina - přístup k více batohům
+    default: op
+  backpack.premium:
+    description: PREMIUM skupina - přístup k více batohům
+    default: op
+  backpack.staff:
+    description: STAFF skupina - přístup k více batohům
+    default: op
+  backpack.admin:
+    description: ADMIN skupina - neomezený přístup + administrátorské příkazy
+    default: op

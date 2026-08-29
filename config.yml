@@ -1,0 +1,67 @@
+# =====================================================
+#              BackpackSystem - config.yml
+# =====================================================
+
+# Nastavení skupin
+# Pořadí v tomto souboru nehraje roli - plugin si skupiny
+# seřadí podle počtu batohů (backpacks) sestupně a hráči
+# přiřadí první skupinu, jejíž permission vlastní.
+groups:
+  default:
+    permission: "backpack.default"
+    backpacks: 1
+    inventory-size: 54
+    title: "&7Batoh #%number%"
+  vip:
+    permission: "backpack.vip"
+    backpacks: 3
+    inventory-size: 54
+    title: "&6⭐ &eBatoh #%number%"
+  premium:
+    permission: "backpack.premium"
+    backpacks: 5
+    inventory-size: 54
+    title: "&b✨ &dBatoh #%number%"
+  staff:
+    permission: "backpack.staff"
+    backpacks: 10
+    inventory-size: 54
+    title: "&c⚡ &6Batoh #%number%"
+  admin:
+    permission: "backpack.admin"
+    backpacks: 999
+    inventory-size: 54
+    title: "&4&lADMIN &cBatoh #%number%"
+
+# Zprávy
+messages:
+  prefix: "&8[&6Backpack&8] &7"
+  out-of-range: "&cMáš přístup pouze k batohům #1 - #%max%!"
+  invalid-number: "&cPoužij: /backpack <číslo> (1 - %max%)"
+  no-permission: "&cNemáš oprávnění pro tento příkaz!"
+  opened: "&aOtevřel jsi batoh #%number%"
+  list-header: "&6&lTVÉ BATOHY:"
+  list-format: " &e- Batoh #%number% %status%"
+  list-status-open: "&a(otevřen)"
+  list-status-closed: "&7(zavřen)"
+  reload-success: "&aConfig byl znovu načten!"
+  reload-error: "&cChyba při načítání configu!"
+  player-not-found: "&cHráč %player% nebyl nalezen!"
+  give-success: "&aOtevřel jsi batoh #%number% hráče %player%"
+  cooldown: "&cPočkej %seconds% sekund před dalším otevřením!"
+
+# Ukládání
+storage:
+  auto-save: 300
+  backup: true
+  folder: "backpacks"
+
+# Ochrana
+protection:
+  cooldown: 2
+  prevent-dupe: true
+  close-on-quit: true
+
+# Cache
+cache:
+  max-size: 100
