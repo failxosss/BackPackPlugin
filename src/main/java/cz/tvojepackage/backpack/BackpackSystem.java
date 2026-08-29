@@ -5,7 +5,7 @@ import cz.tvojepackage.backpack.listeners.BackpackListener;
 import cz.tvojepackage.backpack.managers.BackpackManager;
 import cz.tvojepackage.backpack.managers.ConfigManager;
 import cz.tvojepackage.backpack.managers.GroupManager;
-import org.bukkit.plugin.PluginCommand;
+import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
